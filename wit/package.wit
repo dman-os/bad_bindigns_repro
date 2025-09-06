@@ -1,0 +1,28 @@
+package foo:bar;
+
+interface ctx {
+  init: func();
+}
+
+interface feat-one {
+  record input {
+    hi: string,
+  }
+  record output {
+    hello: string,
+  }
+  resource feat-one {
+    action: func(inp: input) -> output;
+  }
+}
+
+world temp-feat-one {
+  export feat-one;
+}
+
+world app {
+  import wasmcloud:postgres/query@0.1.1-draft;
+
+  export ctx;
+  export feat-one;
+}

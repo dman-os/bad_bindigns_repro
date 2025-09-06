@@ -1,0 +1,5 @@
+package foo:shared;
+
+world imports {
+  import wasmcloud:postgres/query@0.1.1-draft;
+}
