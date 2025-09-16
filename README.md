@@ -1,5 +1,7 @@
 # Binding mismatch repro
 
+✅ [Solved](https://bytecodealliance.zulipchat.com/#narrow/channel/327223-wit-bindgen/topic/stitching.20together.20mutiple.20.60generate!.60.20sections/with/538242417): it was an issue with stable rust and it works in nightly.
+
 Run: 
 ```bash
 $ cargo build --target wasm32-wasip2

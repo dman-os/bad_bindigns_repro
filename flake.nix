@@ -15,9 +15,9 @@
           overlays = [ rust-overlay.overlays.default ];
         };
 
-        rustVersion = "1.89.0";   
+        rustVersion = "2025-09-01";   
 
-        rustChannel = pkgs.rust-bin.stable.${rustVersion}.minimal.override {
+        rustChannel = pkgs.rust-bin.nightly.${rustVersion}.minimal.override {
           extensions = [ "rust-src" ];
           targets = ["wasm32-wasip2" "wasm32-unknown-unknown"];
         };
